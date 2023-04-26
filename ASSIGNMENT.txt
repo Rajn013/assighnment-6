@@ -1,0 +1,134 @@
+que 1. What are escape characters, and how do you use them?
+
+ans     \n - represents a newline character
+        \t - represents a tab character
+        ' - represents a single quote character
+        " - represents a double quote character
+
+que 2. . What do the escape characters n and t stand for?
+
+ans  The escape character n statd for 
+
+      print("Hello\nWorld")
+        
+      output :-
+
+      Hello
+      World
+
+     The escape character  statd for
+
+     print("Name:\tJohn")
+     print("Age:\t25")
+
+
+
+      output :-
+
+      Name:   John
+      Age:    25
+
+
+que 3.  What is the way to include backslash characters in a string?
+
+ans   To include a backslash character (\) in a string, you need to use the backslash escape character (\\). This tells Python that the following character should be treated as a literal backslash, rather than as a part of an escape sequence.
+      
+      for example:-
+
+       path = "C:\\Windows\\System32"
+
+       
+
+        # This will give a syntax error:
+          path = "C:\Windows\System32"
+
+       To include a backslash character in a string in Python, you can use the backslash escape character (\\) or a raw string literal (r"...").
+
+que 5. How do you write a string of newlines if you don't want to use the n character?
+
+ans  write a string of newlines without using the \n character, you can use the os.linesep string, which represents the newline character(s) appropriate for the current operating system.
+
+    import os
+
+    newlines = os.linesep * 3
+    print("This string has three newlines:" + newlines + "End of string.")
+
+
+   output:-
+
+   This string has three newlines:
+ 
+   End of string.
+
+
+que 6. What are the values of the given expressions?
+'Hello, world!'[1]
+'Hello, world!'[0:5]
+'Hello, world!'[:5]
+'Hello, world!'[3:]
+
+ans  
+      print('Hello, world!'[1])   # Output: 'e'
+
+     
+      print('Hello, world!'[0:5]) # Output: 'Hello'
+
+     
+      print('Hello, world!'[:5])  # Output: 'Hello'
+
+     
+      print('Hello, world!'[3:])  # Output: 'lo, world!'
+
+
+que 7.7. What are the values of the following expressions?
+'Hello'.upper()
+'Hello'.upper().isupper()
+'Hello'.upper().lower()
+
+
+ans 
+     print('Hello'.upper())           # Output: 'HELLO'
+
+
+     print('Hello'.upper().isupper()) # Output: True
+
+
+     print('Hello'.upper().lower())   # Output: 'hello'
+
+
+que 8. What are the values of the following expressions?
+         'Remember, remember, the fifth of July.'.split()
+          '-'.join('There can only one.'.split())
+
+
+ans  
+           print('Remember, remember, the fifth of July.'.split())
+           Output: ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+
+
+           print('-'.join('There can be only one.'.split()))
+           Output: 'There-can-be-only-one.'
+
+
+que 9. What are the methods for right-justifying, left-justifying, and centering a string?
+
+
+ans        Define a string
+            text = 'Hello, world!'
+
+           Left-justify the string within a width of 20 characters
+            print(text.ljust(20))   # Output: 'Hello, world!       '
+
+           Right-justify the string within a width of 20 characters
+            print(text.rjust(20))   # Output: '       Hello, world!'
+
+           Center the string within a width of 20 characters
+            print(text.center(20))  # Output: '   Hello, world!    '
+
+
+que 10. What is the best way to remove whitespace characters from the start or end?
+
+
+ans     strip(): removes all leading and trailing whitespace characters from a string.
+        lstrip(): removes only leading (left) whitespace characters from a string.
+        rstrip(): removes only trailing (right) whitespace characters from a string.
